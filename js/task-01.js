@@ -1,16 +1,26 @@
 const categoryLengthEl = document.querySelectorAll('.item');
 console.log('Number of categories:', categoryLengthEl.length);
 
-const navArray = document.querySelector('#categories');
-const listNavArray = navArray.children;
-console.log(listNavArray);
+const imagesGalleryEl = document.querySelector(".gallery");
 
-listNavArray.forEach(function (name, index, array) {
-    const navElement = document.querySelector('.item');
-    const firstEl = navElement.firstElementChild;
-    console.log('Category:', firstEl.textContent);
+// images.forEach(({url, alt}) => {
+// const imgEl = `<li><img src="${url}" alt="${alt}"></img></li>`;
+// imagesGalleryEl.insertAdjacentHTML("beforeend", imgEl);
+// });
 
-});
+
+
+
+// const navArray = document.querySelector('#categories');
+// const listNavArray = navArray.children;
+// console.log(listNavArray);
+
+// listNavArray.forEach(function (name, index, array) {
+//     const navElement = document.querySelector('.item');
+//     const firstEl = navElement.firstElementChild;
+//     console.log('Category:', firstEl.textContent);
+
+// });
 
 // const navElement = document.querySelector('.item');
 // const firstEl = navElement.firstElementChild;
