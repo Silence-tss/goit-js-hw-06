@@ -1,12 +1,13 @@
 const categoryLengthEl = document.querySelectorAll('.item');
 console.log('Number of categories:', categoryLengthEl.length);
 
-const imagesGalleryEl = document.querySelector(".gallery");
+categoryLengthEl.forEach(item => {
+    console.log(`Category: ${item.firstElementChild.textContent}`);
+    console.log(`Elements: ${item.lastElementChild.children.length}`);
 
-// images.forEach(({url, alt}) => {
-// const imgEl = `<li><img src="${url}" alt="${alt}"></img></li>`;
-// imagesGalleryEl.insertAdjacentHTML("beforeend", imgEl);
-// });
+})
+
+
 
 
 
